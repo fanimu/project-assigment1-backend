@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "0a18c071-c74c-4e95-9b0c-da32a1680d54",
+		"name": "Assignment-Inosoft-Fani Mulyana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21223547"
+	},
+	"item": [
+		{
+			"name": "Kelas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "Kelas C",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/kelas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"kelas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Siswa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "Eric",
+							"type": "text"
+						},
+						{
+							"key": "_kelas_id",
+							"value": "64e03981389d5817c1071c08",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/siswa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nilai",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_siswa_id",
+							"value": "64e04a77389d5817c1071c0a",
+							"type": "text"
+						},
+						{
+							"key": "mata_pelajaran",
+							"value": "Fisika",
+							"type": "text"
+						},
+						{
+							"key": "nilai_latihan1",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "nilai_latihan2",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "nilai_latihan3",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "nilai_latihan4",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "nilai_ulangan_harian1",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "nilai_ulangan_harian2",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "nilai_ulangan_tengah_semester",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "nilai_ulangan_akhir_semester",
+							"value": "90",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/nilai-siswa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"nilai-siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kelas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"Kelas B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/kelas/64e03981389d5817c1071c08",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"kelas",
+						"64e03981389d5817c1071c08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kelas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/kelas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"kelas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Siswa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/siswa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Kelas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/detail-kelas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"detail-kelas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Siswa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/detail-siswa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"detail-siswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Nilai Siswa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/detail-nilai-siswa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"detail-nilai-siswa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
